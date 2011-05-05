@@ -1,0 +1,9 @@
+Maven Cargo Project
+
+Project defaults to Jetty6x.
+
+mvn clean verify
+
+To select a profile with -P
+
+mvn clean verify -P tomcat6x
