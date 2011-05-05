@@ -9,7 +9,7 @@ public class WebappTest extends TestCase
 {
     public void testCallIndexPage() throws Exception
     {
-        URL url = new URL("http://localhost:8080/cargo-project");
+        URL url = new URL("http://localhost:8081/cargo-project");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.connect();
         assertEquals(200, connection.getResponseCode());
