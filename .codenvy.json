@@ -1,1 +1,56 @@
-
+{
+  "v": "4.0",
+  "name": "TestCargo",
+  "workspace": {
+    "defaultEnv": "default",
+    "environments": {
+      "default": {
+        "machines": {
+          "dev-machine": {
+            "attributes": {
+              "memoryLimitBytes": "2147483648"
+            },
+            "servers": {},
+            "agents": [
+              "org.eclipse.che.ssh",
+              "org.eclipse.che.ws-agent",
+              "org.eclipse.che.terminal",
+              "org.eclipse.che.exec"
+            ]
+          }
+        },
+        "recipe": {
+          "location": "eclipse/ubuntu_jdk8",
+          "type": "dockerimage"
+        }
+      }
+    },
+    "projects": [
+      {
+        "links": [],
+        "name": "johncm-cargo-project",
+        "attributes": {},
+        "type": "blank",
+        "source": {
+          "location": "https://github.com/johncm/cargo-project.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/johncm-cargo-project",
+        "description": "A Maven Cargo Project",
+        "problems": [],
+        "mixins": []
+      }
+    ],
+    "name": "wksp-eiun",
+    "commands": [],
+    "links": []
+  },
+  "id": "factory20ogjgqt15obebzo",
+  "creator": {
+    "name": "johncm0225",
+    "email": "johncm0225@gmail.com",
+    "created": 1518120939082,
+    "userId": "user2lo0rcedpmlqeasp"
+  }
+}
